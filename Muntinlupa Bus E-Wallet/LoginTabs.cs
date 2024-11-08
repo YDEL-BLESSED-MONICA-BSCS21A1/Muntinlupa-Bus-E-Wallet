@@ -45,6 +45,9 @@ namespace Muntinlupa_Bus_E_Wallet
                         MessageBox.Show("Login successful!", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         UserNameTxt.Clear();
                         PassTxt.Clear();
+                        AdminDashboard Form = new AdminDashboard();
+                        Form.Show();
+                        this.Close();
                     }
                     else
                     {
