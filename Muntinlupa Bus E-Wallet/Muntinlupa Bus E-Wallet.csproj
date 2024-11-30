@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CB3FE583-ABF1-4B9E-B002-FC0CCA1F970F}</ProjectGuid>
+    <ProjectGuid>{3444D22B-68D4-462B-8C62-2F95B112D61B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Muntinlupa_Bus_E_Wallet</RootNamespace>
     <AssemblyName>Muntinlupa Bus E-Wallet</AssemblyName>
@@ -46,50 +46,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminDashboard.cs">
+    <Compile Include="AccountRegistrationForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminDashboard.Designer.cs">
-      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    <Compile Include="AccountRegistrationForm.Designer.cs">
+      <DependentUpon>AccountRegistrationForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="connection.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="frmReloadAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
-    <Compile Include="LoginTabs.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="LoginTabs.Designer.cs">
-      <DependentUpon>LoginTabs.cs</DependentUpon>
+    <Compile Include="frmReloadAccount.Designer.cs">
+      <DependentUpon>frmReloadAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserManagement.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UserManagement.Designer.cs">
-      <DependentUpon>UserManagement.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="AdminDashboard.resx">
-      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    <EmbeddedResource Include="AccountRegistrationForm.resx">
+      <DependentUpon>AccountRegistrationForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="LoginTabs.resx">
-      <DependentUpon>LoginTabs.cs</DependentUpon>
+    <EmbeddedResource Include="frmReloadAccount.resx">
+      <DependentUpon>frmReloadAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -100,9 +75,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserManagement.resx">
-      <DependentUpon>UserManagement.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
